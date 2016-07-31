@@ -39,13 +39,13 @@ body {
   font-family: Roboto Condensed;
   font-size: 14px;
   font-weight: 400;
-  background-color: #fff0e6;
+  background-color: #803300;
   color: #656565;
 }
 #body-bg {
   background-attachment: fixed;
   background-clip: border-box;
-  background-color: #fff0e6;
+  background-color: #803300;
   background-origin: padding-box;
   background-position: 50% 0;
   background-repeat: no-repeat;
@@ -1552,7 +1552,7 @@ a.slicknav_item [class*=" fa-"] {
   top: 0;
   left: 0;
   padding: 30px 40px;
-  background-color: #000000;
+  background-color: #331400;
   text-align: left;
   text-transform: none;
   position: absolute;
