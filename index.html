@@ -1,695 +1,514 @@
+<!-- === BEGIN HEADER === -->
 <!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
 <html lang="en">
+    <!--<![endif]-->
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <title>Habitat Documentation</title>
-        <meta name="description" content="Installation Documentation for your Bootstrap Template" />
-        <meta name="keywords" content="boostrap, template, documentaion" />
-        <meta name="robots" content="noindex, nofollow">
-        
-        <!-- Responsive Meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <!-- Stylesheets -->
-        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"/>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+        <!-- Title -->
+        <title>Habitat - A Professional Bootstrap Template</title>
+        <!-- Meta -->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!-- Favicon -->
+        <link href="favicon.ico" rel="shortcut icon">
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+        <!-- Template CSS -->
+        <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+        <!-- Google Fonts-->
+        <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
     </head>
-    
-    <body data-spy="scroll" data-target="#sidebar-menu">
-        <!-- Header for Screens Small or Extra Small -->
-        <header class="nav-scope navbar navbar-default navbar-static-top hidden-lg hidden-md" role="banner">
-            <div class="container">
-                <div class="row">
-                    <div class="navbar-header">
-                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="row">
-                            <!-- Logo -->
-                            <div class="logo-scope">
-                                <p>Habitat</p>
-                            </div>
-                            </div><!-- close row for logo -->
-                            <!-- Slogan -->
-                            <div class="slogan-scope">
-                                <p>Professional Bootstrap Template</p>
-                            </div>
-                            <!-- Buttons -->
-                            <div class="button-container-scope">
-                                <a href="http://demonthemes/demo/Templates/" class="btn btn-primary btn-xs" target="_blank">Template Demo <span class="glyphicon glyphicon-picture"></span></a>
-                            </div>
+    <body>
+        <div id="body-bg">
+            <!-- Phone/Email -->
+            <div id="pre-header" class="background-gray-lighter">
+                <div class="container no-padding">
+                    <div class="row hidden-xs">
+                        <div class="col-sm-6 padding-vert-5">
+                            <strong>Phone:</strong>&nbsp;1-800-123-4567
                         </div>
-                        <!-- Product Image -->
-                        <div class="col-sm-6 hidden-xs">
-                            <img src="assets/images/template_showcase.png">
+                        <div class="col-sm-6 text-right padding-vert-5">
+                            <strong>Email:</strong>&nbsp;info@joomla51.com
                         </div>
                     </div>
-                    <nav class="collapse navbar-collapse" role="navigation">
-                        <ul class="nav navbar-nav hidden-md">
-                            <li><a href="#overview">Overview</a></li>
-                            <li><a href="#folder">Folder Structure</a></li>
-                            <li><a href="#html">HTML Structure</a></li>
-                            <li><a href="#css">CSS Structure</a></li>
-                            <li><a href="#utility">Utility Classes</a></li>
-                            <li><a href="#credits">Credits</a></li>
-                            <li><a href="#images">Demo Images</a></li>
-                            <li><a href="#changelog">Change Log</a></li>
-                            <li><a href="#end">End of Documentation</a></li>
-                        </ul>
-                    </nav>
                 </div>
-            </header>
-            <!-- Showcase Header for screen sizes Medium or Large-->
-            <div class="jumbotron jumbotron-scope hidden-sm hidden-xs">
+            </div>
+            <!-- End Phone/Email -->
+            <!-- Header -->
+            <div id="header">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-7">
-                            <h1>Habitat</h1>
-                            <p>Professional Bootstrap Template</p>
-                            <a href="http://www.demonthemes.com/demo/Templates/" class="btn btn-primary btn-lg margin-top-20" target="_blank">Template Demo <span class="glyphicon glyphicon-picture"></span></a>
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="index.html" title="">
+                                <img src="assets/img/logo.png" alt="Logo" />
+                            </a>
                         </div>
-                        <div class="col-md-5">
-                            <div class="pull-right">
-                                <img src="assets/img/template_showcase.png">
+                        <!-- End Logo -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Header -->
+            <!-- Top Menu -->
+            <div id="hornav" class="bottom-border-shadow">
+                <div class="container no-padding border-bottom">
+                    <div class="row">
+                        <div class="col-md-8 no-padding">
+                            <div class="visible-lg">
+                                <ul id="hornavmenu" class="nav navbar-nav">
+                                    <li>
+                                        <a href="index.html" class="fa-home active">Home</a>
+                                    </li>
+                                    <li>
+                                        <span class="fa-gears ">Features</span>
+                                        <ul>
+                                            <li class="parent">
+                                                <span>Typography</span>
+                                                <ul>
+                                                    <li>
+                                                        <a href="features-typo-basic.html">Basic Typography</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="features-typo-blockquotes.html">Blockquotes</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="parent">
+                                                <span>Components</span>
+                                                <ul>
+                                                    <li>
+                                                        <a href="features-labels.html">Labels</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="features-progress-bars.html">Progress Bars</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="features-panels.html">Panels</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="features-pagination.html">Pagination</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="parent">
+                                                <span>Icons</span>
+                                                <ul>
+                                                    <li>
+                                                        <a href="features-icons.html">Icons General</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="features-icons-social.html">Social Icons</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="features-icons-font-awesome.html">Font Awesome</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="features-icons-glyphicons.html">Glyphicons</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="features-testimonials.html">Testimonials</a>
+                                            </li>
+                                            <li>
+                                                <a href="features-accordions-tabs.html">Accordions & Tabs</a>
+                                            </li>
+                                            <li>
+                                                <a href="features-buttons.html">Buttons</a>
+                                            </li>
+                                            <li>
+                                                <a href="features-carousels.html">Carousels</a>
+                                            </li>
+                                            <li>
+                                                <a href="features-grid.html">Grid System</a>
+                                            </li>
+                                            <li>
+                                                <a href="features-animate-on-scroll.html">Animate On Scroll</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="fa-copy ">Pages</span>
+                                        <ul>
+                                            <li>
+                                                <a href="pages-about-us.html">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-services.html">Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-faq.html">F.A.Q.</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-about-me.html">About Me</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-full-width.html">Full Width</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-left-sidebar.html">Left Sidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-right-sidebar.html">Right Sidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-login.html">Login</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-sign-up.html">Sign-Up</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-404.html">404 Error Page</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="fa-th ">Portfolio</span>
+                                        <ul>
+                                            <li>
+                                                <a href="portfolio-2-column.html">2 Column</a>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio-3-column.html">3 Column</a>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio-4-column.html">4 Column</a>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio-6-column.html">6 Column</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="fa-font ">Blog</span>
+                                        <ul>
+                                            <li>
+                                                <a href="blog-list.html">Blog</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog-single.html">Blog Single Item</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html" class="fa-comment ">Contact</a>
+                                    </li>
+                                </ul>
                             </div>
+                        </div>
+                        <div class="col-md-4 no-padding">
+                            <ul class="social-icons pull-right">
+                                <li class="social-rss">
+                                    <a href="#" target="_blank" title="RSS"></a>
+                                </li>
+                                <li class="social-twitter">
+                                    <a href="#" target="_blank" title="Twitter"></a>
+                                </li>
+                                <li class="social-facebook">
+                                    <a href="#" target="_blank" title="Facebook"></a>
+                                </li>
+                                <li class="social-googleplus">
+                                    <a href="#" target="_blank" title="Google+"></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Begin Body -->
-            <div class="container">
-                <div class="row">
-                    <!-- Sidebar -->
-                    <div class="col-md-3">
-                        <div class="well hidden-sm hidden-xs" id="sidebar-menu" data-spy="affix" data-offset-top="330">
-                            <ul class="nav nav-pills nav-stacked">
-                                <li><a href="#overview">Overview</a></li>
-                                <li><a href="#folder">Folder Structure</a></li>
-                                <li><a href="#html">HTML Structure</a></li>
-                                <li><a href="#css">CSS Structure</a></li>
-                                <li><a href="#utility">Utility Classes</a></li>
-                                <li><a href="#credits">Credits</a></li>
-                                <li><a href="#images">Demo Images</a></li>
-                                <li><a href="#changelog">Change Log</a></li>
-                                <li><a href="#end">End of Documentation</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Content -->
-                    <div class="col-md-9">
-                        <!-- Overview -->
-                        <div class="well well-scope" id="overview">
-                            <h3 class="margin-bottom-20">Overview</h3>
-                            <p>Habitats clean lines and stylish design will give your site the perfect platform to stand out from the crowd. In modern web design content is everything and our Habitat template puts its focus on just that.</p>
-                            <ul>
-                                <li>Responsive Layout</li>
-                                <li>Isotope Filterable Portfolio</li>
-                                <li>17 Page Templates</li>
-                                <li>Animate On Scroll</li>
-                                <li>Unique Bootstrap Component Styling</li>
-                                <li>Thumbs Gallery</li>
-                                <li>Detailed HTML Commenting</li>
-                                <li>LESS CSS Files</li>
-                            </ul>
-                        </div>
-                        <!-- End Overview -->
-                        <!-- Folder Structure -->
-                        <div class="panel panel-default panel-scope" id="folder">
-                            <div class="panel-heading"><h3>Folder Structure</h3></div>
-                            <div class="panel-body">
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <tr>
-                                            <td><strong>Folder/File</strong></td>
-                                            <td><strong>Description</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/css</td>
-                                            <td>Contains all the CSS files for your template</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/css/animate.css</td>
-                                            <td>CSS animations - http://daneden.github.io/animate.css/</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/css/bootstrap.css</td>
-                                            <td>Bootstrap front-end framework - http://getbootstrap.com</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/css/fontawesome.css</td>
-                                            <td>Font Awesome - Scalable vector fonts - http://fortawesome.github.io/Font-Awesome/</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/css/nexus.css</td>
-                                            <td>Main template stylesheet</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/css/responsive.css</td>
-                                            <td>Responsive template stylesheet</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/fonts</td>
-                                            <td>Template fonts</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/fonts/*.svg</td>
-                                            <td>Font files for legacy iOS</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/fonts/*.woff</td>
-                                            <td>Font files for modern browsers</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/fonts/*.eot</td>
-                                            <td>Font files for Internet Explorer</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/fonts/*.ttf</td>
-                                            <td>Font files for Safari, Android, iOS</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/img</td>
-                                            <td>Template images</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/js/bootstrap.min.js</td>
-                                            <td>Minified jQuery Javascript library</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/js/jquery.isotope.js</td>
-                                            <td>Isotope JS - Filter and sort layouts - used in portfolio</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/js/jquery.min.js</td>
-                                            <td>Minified jQuery Javascript library</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/js/jquery.slicknav.js</td>
-                                            <td>Responsive mobile menu plugin - http://slicknav.com/</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/js/jquery.sticky.js</td>
-                                            <td>Sticky Div -  used for header area of your template</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/js/modernizr.custom.js</td>
-                                            <td>Modernizr JavaScript library - http://modernizr.com/</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/js/scripts.js</td>
-                                            <td>Template Javascript adjustment and activation</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/less</td>
-                                            <td>Template LESS files</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/less/bootstap</td>
-                                            <td>Bootstrap LESS files</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/less/font-awesome</td>
-                                            <td>Font Awesome LESS files</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/assets/less/variables.less</td>
-                                            <td>Template and Bootstrap LESS variables</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-family: courier; color: #656565;">/*.html</td>
-                                            <td>Template pages</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                
-                            </div>
-                        </div>
-                        <!-- End Folder Structure -->
-                        <!-- HTML Structure -->
-                        <div class="panel panel-default panel-scope" id="html">
-                            <div class="panel-heading"><h3>HTML Structure</h3></div>
-                            <div class="panel-body">
-                                <p class="margin-bottom-30">To better understand the structure of your template we have clearly commented all HTML. You will find each pages to be commented in to 3 main sections, header, footer and content. For most of your page you will find both the header section and the footer section to remain the same.</p>
-                                <img src="assets/img/html_layout.jpg" class="margin-bottom-30">
-                                <h4>Header Section</h4>
-                                <hr>
-                    <pre class="margin-bottom-20 prettyprint lang-html">&lt;!-- === BEGIN HEADER === --&gt;
-...
-&lt;!-- === END HEADER === --&gt;</pre>
-                                <p class="margin-bottom-20">This sections starts from the very beginning of each page and includes all content common to each of your pages. The header section will include the following..</p>
-                                <ul class="margin-bottom-40">
-                                    <li>DOCTYPE declaration</li>
-                                    <li>Opening &lt;html&gt; tag</li>
-                                    <li>Entire &lt;head&gt; of your HTML document</li>
-                                    <li>Opening &lt;body&gt; tag</li>
-                                    <li>Header area of your template common to each of your pages inc.</li>
-                                    <ul class="margin-top-5">
-                                        <li>Top social icons</li>
-                                        <li>Logo and slogan</li>
-                                        <li>Main menu</li>
-                                    </ul>
-                                </ul>
-                                <h4>Content Section</h4>
-                                <hr>
-                                <p class="margin-bottom-20">The content section contain your main content for each of your pages and will be where the bulk of your changes will be made.</p>
-                    <pre class="margin-bottom-40 prettyprint lang-html">&lt;!-- === BEGIN CONTENT === --&gt;
-...
-&lt;!-- === END CONTENT === --&gt;</pre>
-                                <h4>Footer Section</h4>
-                                <hr>
-                                <p class="margin-bottom-30">The footer section contains the end of your HTML document. Similar to the header section, this section will most likely remain the same across all your pages, containing all the common elements in the foooter right down to the closing &lt;/html&gt;.</p>
-                    <pre class="margin-bottom-30 prettyprint lang-html">&lt;!-- === BEGIN FOOTER === --&gt;
-...
-&lt;!-- === END FOOTER === --&gt;</pre>
-                                <p>The footer section will contain the following:</p>
-                                <ul class="margin-bottom-30">
-                                    <li>Footer content boxes (Contact info, disclaimer etc.)</li>
-                                    <li>Footer Menu</li>
-                                    <li>Closing &lt;/body&gt; and &lt;/html&gt;</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- End HTML Structure -->
-                        <!-- CSS Structure -->
-                        <div class="panel panel-default panel-scope" id="css">
-                            <div class="panel-heading"><h3>CSS Structure</h3></div>
-                            <div class="panel-body">
-                                <p>The following CSS files are loaded with your template in this order: </p>
-                                <h4>bootstrap.css</h4>
-                                <p>CSS for Bootsrap front-end framework</p>
-                                <h4>animate.css</h4>
-                                <p>Animations stylesheet used for on scroll animations</p>
-                                <h4>font-awesome.min.css</h4>
-                                <p>Scalable vector icons for Bootstrap.</p>
-                                <h4>nexus.css</h4>
-                                <p>The main template stylesheet. This is where you will find the bulk of your template CSS.</p>
-                                <h4>responsive.css</h4>
-                                <p>Stylesheet for responsive layout. All CSS in this file is placed within media queries applied to particular devices and screen sizes. </p>
-                                <h4>custom.css</h4>
-                                <p>Any custom CSS you wish to apply to your template can be added to this CSS files. This is the last CSS file to be loaded.</p>
-                            </div>
-                        </div>
-                        <!-- End CSS Structure -->
-                        <!-- Utility Classes -->
-                        <div class="panel panel-default panel-scope" id="utility">
-                            <div class="panel-heading"><h3>Utility Classes</h3></div>
-                            <div class="panel-body">
-                                <p>A utility class is a class that defines a set of methods that perform common, often re-used functions. Your template includes a number of helpful utility classes to help style your content.</p>
-                                <p class="margin-bottom-30">The following shows how you can use a utilty class with a H2 heading. In this example we will be adding 40px bottom padding to the heading.</p>
-                    <pre class="prettyprint lang-html margin-bottom-30">&lt;h2 class=&quot;padding-bottom-40&quot;&gt;
-    A Sample Heading
-&lt;/h2&gt;</pre>
-                                <h4>Padding & Margin Classes</h4>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <table class="table table-striped table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th width="180">Class</th>
-                                                    <th class="hidden-sm">CSS Property</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>padding-top-0</td>
-                                                    <td class="hidden-sm">padding-top: 0px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-top-5</td>
-                                                    <td class="hidden-sm">padding-top: 5px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-top-10</td>
-                                                    <td class="hidden-sm">padding-top: 10px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-top-15</td>
-                                                    <td class="hidden-sm">padding-top: 15px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-top-20</td>
-                                                    <td class="hidden-sm">padding-top: 20px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-top-30</td>
-                                                    <td class="hidden-sm">padding-top: 30px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-top-40</td>
-                                                    <td class="hidden-sm">padding-top: 40px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-top-60</td>
-                                                    <td class="hidden-sm">padding-top: 60px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-bottom-0</td>
-                                                    <td class="hidden-sm">padding-bottom: 0px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-bottom-5</td>
-                                                    <td class="hidden-sm">padding-bottom: 5px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-bottom-10</td>
-                                                    <td class="hidden-sm">padding-bottom: 10px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-bottom-15</td>
-                                                    <td class="hidden-sm">padding-bottom: 15px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-bottom-20</td>
-                                                    <td class="hidden-sm">padding-bottom: 20px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-bottom-30</td>
-                                                    <td class="hidden-sm">padding-bottom: 30px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-bottom-40</td>
-                                                    <td class="hidden-sm">padding-bottom: 40px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-bottom-60</td>
-                                                    <td class="hidden-sm">padding-bottom: 60px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-horiz-10</td>
-                                                    <td class="hidden-sm">padding: 0 10px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-horiz-20</td>
-                                                    <td class="hidden-sm">padding: 0 20px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-horiz-30</td>
-                                                    <td class="hidden-sm">padding: 0 30px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-horiz-40</td>
-                                                    <td class="hidden-sm">padding: 0 40px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-horiz-60</td>
-                                                    <td class="hidden-sm">padding: 0 60px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-vert-10</td>
-                                                    <td class="hidden-sm">padding: 10px 0;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-vert-20</td>
-                                                    <td class="hidden-sm">padding: 20px 0;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-vert-30</td>
-                                                    <td class="hidden-sm">padding: 30px 0;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-vert-40</td>
-                                                    <td class="hidden-sm">padding: 40px 0;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>padding-vert-60</td>
-                                                    <td class="hidden-sm">padding: 60px 0;</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <table class="table table-striped table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th width="180">Class</th>
-                                                    <th class="hidden-sm">CSS Property</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>margin-top-0</td>
-                                                    <td class="hidden-sm">margin-top: 0;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-top-5</td>
-                                                    <td class="hidden-sm">margin-top: 5;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-top-10</td>
-                                                    <td class="hidden-sm">margin-top: 10;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-top-15</td>
-                                                    <td class="hidden-sm">margin-top: 15;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-top-20</td>
-                                                    <td class="hidden-sm">margin-top: 20;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-top-30</td>
-                                                    <td class="hidden-sm">margin-top: 30;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-top-40</td>
-                                                    <td class="hidden-sm">margin-top: 40;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-top-60</td>
-                                                    <td class="hidden-sm">margin-top: 60;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-bottom-0</td>
-                                                    <td class="hidden-sm">margin-bottom: 0;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-bottom-5</td>
-                                                    <td class="hidden-sm">margin-bottom: 5;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-bottom-10</td>
-                                                    <td class="hidden-sm">margin-bottom: 10;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-bottom-15</td>
-                                                    <td class="hidden-sm">margin-bottom: 15;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-bottom-20</td>
-                                                    <td class="hidden-sm">margin-bottom: 20;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-bottom-30</td>
-                                                    <td class="hidden-sm">margin-bottom: 30;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-bottom-40</td>
-                                                    <td class="hidden-sm">margin-bottom: 40;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-bottom-60</td>
-                                                    <td class="hidden-sm">margin-bottom: 60;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-horiz-10</td>
-                                                    <td class="hidden-sm">margin: 0 10px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-horiz-20</td>
-                                                    <td class="hidden-sm">margin: 0 20px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-horiz-30</td>
-                                                    <td class="hidden-sm">margin: 0 30px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-horiz-40</td>
-                                                    <td class="hidden-sm">margin: 0 40px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-horiz-60</td>
-                                                    <td class="hidden-sm">margin: 0 60px;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-vert-10</td>
-                                                    <td class="hidden-sm">margin: 10px 0;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-vert-20</td>
-                                                    <td class="hidden-sm">margin: 20px 0;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-vert-30</td>
-                                                    <td class="hidden-sm">margin: 30px 0;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-vert-40</td>
-                                                    <td class="hidden-sm">margin: 40px 0;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>margin-vert-60</td>
-                                                    <td class="hidden-sm">margin: 60px 0;</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+            <!-- End Top Menu -->
+            <!-- === END HEADER === -->
+            <!-- === BEGIN CONTENT === -->
+            <div id="slideshow" class="bottom-border-shadow">
+                <div class="container no-padding background-white bottom-border">
+                    <div class="row">
+                        <!-- Carousel Slideshow -->
+                        <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                            <!-- Carousel Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example" data-slide-to="1"></li>
+                                <li data-target="#carousel-example" data-slide-to="2"></li>
+                            </ol>
+                            <div class="clearfix"></div>
+                            <!-- End Carousel Indicators -->
+                            <!-- Carousel Images -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="assets/img/slideshow/slide1.jpg">
                                 </div>
-                                <h4>Color Classes</h4>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <table class="table table-striped table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th width="180">Class</th>
-                                                    <th class="hidden-sm">CSS Property</th>
-                                                    <th>Color</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>color-default</td>
-                                                    <td class="hidden-sm">color: #313131;</td>
-                                                    <td style="background: #313131"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>color-primary</td>
-                                                    <td class="hidden-sm">color: #33747a;</td>
-                                                    <td style="background: #33747a"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>color-red</td>
-                                                    <td class="hidden-sm">color: #8b2626</td>
-                                                    <td style="background: #8b2626"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>color-blue</td>
-                                                    <td class="hidden-sm">color: #43668c;</td>
-                                                    <td style="background: #43668c"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>color-green</td>
-                                                    <td class="hidden-sm">color: #649f2b;</td>
-                                                    <td style="background: #649f2b"></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <table class="table table-striped table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th width="180">Class</th>
-                                                    <th class="hidden-sm">CSS Property</th>
-                                                    <th>Color</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>color-aqua</td>
-                                                    <td class="hidden-sm">color: #86b998;</td>
-                                                    <td style="background: #86b998"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>color-yellow</td>
-                                                    <td class="hidden-sm">color: #d0b426;</td>
-                                                    <td style="background: #d0b426"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>color-brown</td>
-                                                    <td class="hidden-sm">color: #6f6f55;</td>
-                                                    <td style="background: #6f6f55"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>color-violet</td>
-                                                    <td class="hidden-sm">color: #8270a4;</td>
-                                                    <td style="background: #8270a4"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>color-orange</td>
-                                                    <td class="hidden-sm">color: #ae6926;</td>
-                                                    <td style="background: #ae6926"></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    
+                                <div class="item">
+                                    <img src="assets/img/slideshow/slide2.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/img/slideshow/slide3.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/img/slideshow/slide4.jpg">
                                 </div>
                             </div>
+                            <!-- End Carousel Images -->
+                            <!-- Carousel Controls -->
+                            <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                            <!-- End Carousel Controls -->
                         </div>
-                        <!-- End Utility Classes -->
-                        <!-- Credits -->
-                        <div class="panel panel-default panel-scope" id="credits">
-                            <div class="panel-heading"><h3>Credits</h3></div>
-                            <div class="panel-body">
-                                <ul>
-                                    <li>Bootstrap 3 <a href="http://getbootstrap.com/" target="_blank">getbootstrap.com/</a></li>
-                                    <li>jQuery <a href="http://jquery.com/" target="_blank">jquery.com/</a></li>
-                                    <li>Animate.css <a href="http://daneden.github.io/animate.css/" target="_blank">daneden.github.io/animate.css/</a></li>
-                                    <li>Google Fonts <a href="http://www.google.com/fonts/" target="_blank">google.com/fonts</a></li>
-                                    <li>Font Awesome <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">fortawesome.github.io/Font-Awesome/</a></li>
-                                    <li>Isotope <a href="http://isotope.metafizzy.co/">isotope.metafizzy.co/</a></li>
-                                    <li>SlickNav <a href="http://slicknav.com/">slicknav.com/</a></li>
-                                    <li>StickyJS <a href="http://stickyjs.com/">stickyjs.com/</a></li>
-                                    <li>Modernizr <a href="http://modernizr.com/">modernizr.com/</a></li>
-                                    <li>LESS <a href="http://lesscss.org/">lesscss.org/</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- End Credits -->
-                        <!-- Demo Images -->
-                        <div class="panel panel-default panel-scope" id="images">
-                            <div class="panel-heading"><h3>Demo Images</h3></div>
-                            <div class="panel-body">
-                                <p>All images used on the demo of this template are available free to download from the excellent <a class="nobold" href="http://unsplash.com/" target="_blank">http://unsplash.com/</a></p>
-                            </div>
-                        </div>
-                        <!-- End Demo Images -->
-                        <!-- Changelog -->
-                        <div class="panel panel-default panel-scope" id="sec7">
-                            <div class="panel-heading"><h3>Changelog</h3></div>
-                            <div class="panel-body">
-                                <ol class="list">
-                                    <li>Version 1.0 - October 1st 2014</li>
-                                </ol>
-                            </div>
-                        </div>
-                        <!-- End Changelog -->
-                        <div class="panel panel-default panel-scope" id="end">
-                            <div class="panel-heading"><h3>End of Documentation</h3></div>
-                            <div class="panel-body">
-                                <p class="margin-bottom-60">Thank you for purchasing and we hope you enjoy your template!</p>
-                            </div>
-                        </div>
-                        
+                        <!-- End Carousel Slideshow -->
                     </div>
                 </div>
             </div>
-            <!-- load required scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/bootstrap.min.js"></script>
-            <script>
-            $(function() {
-            $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-            $('html,body').animate({
-            scrollTop: target.offset().top
-            }, 1000);
-            return false;
-            }
-            }
-            });
-            });
-            </script>
-            <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-        </body>
-    </html>
+            <div id="icons" class="bottom-border-shadow">
+                <div class="container background-grey bottom-border">
+                    <div class="row padding-vert-60">
+                        <!-- Icons -->
+                        <div class="col-md-4 text-center">
+                            <i class="fa-cogs fa-4x color-primary animate fadeIn"></i>
+                            <h2 class="padding-top-10 animate fadeIn">Velit esse molestie</h2>
+                            <p class="animate fadeIn">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer.</p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <i class="fa-cloud-download fa-4x color-primary animate fadeIn"></i>
+                            <h2 class="padding-top-10 animate fadeIn">Quam nunc putamus</h2>
+                            <p class="animate fadeIn">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer.</p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <i class="fa-bar-chart fa-4x color-primary animate fadeIn"></i>
+                            <h2 class="padding-top-10 animate fadeIn">Placerat facer possim</h2>
+                            <p class="animate fadeIn">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer.</p>
+                        </div>
+                        <!-- End Icons -->
+                    </div>
+                </div>
+            </div>
+            <div id="content" class="bottom-border-shadow">
+                <div class="container background-white bottom-border">
+                    <div class="row margin-vert-30">
+                        <!-- Main Text -->
+                        <div class="col-md-6">
+                            <h2>Welcome to Habitat</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                                lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+                                augue duis dolore te feugait nulla facilisi. Cras non sem sem, at eleifend mi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Curabitur eget nisl
+                                a risus.</p>
+                        </div>
+                        <!-- End Main Text -->
+                        <div class="col-md-6">
+                            <h3 class="padding-vert-10">Key Features</h3>
+                            <p>Duis sit amet orci et lectus dictum auctor a nec enim. Donec suscipit fringilla elementum. Suspendisse nec justo ut felis ornare tincidunt vitae et lectus.</p>
+                            <ul class="tick animate fadeInRight">
+                                <li>Responsive Design</li>
+                                <li>Built with LESS</li>
+                                <li>Font Choosers</li>
+                                <li>Replaceable Background Image</li>
+                                <li>Custom Module Widths</li>
+                                <li>All Module Extensions Included</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio -->
+            <div id="portfolio" class="bottom-border-shadow">
+                <div class="container bottom-border">
+                    <div class="row padding-top-40">
+                        <ul class="portfolio-group">
+                            <!-- Portfolio Item -->
+                            <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
+                                <a href="#">
+                                    <figure class="animate fadeInLeft">
+                                        <img alt="image1" src="assets/img/frontpage/image1.jpg">
+                                        <figcaption>
+                                            <h3>Velit esse molestie</h3>
+                                            <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <!-- //Portfolio Item// -->
+                            <!-- Portfolio Item -->
+                            <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
+                                <a href="#">
+                                    <figure class="animate fadeIn">
+                                        <img alt="image2" src="assets/img/frontpage/image2.jpg">
+                                        <figcaption>
+                                            <h3>Quam nunc putamus</h3>
+                                            <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <!-- //Portfolio Item// -->
+                            <!-- Portfolio Item -->
+                            <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
+                                <a href="#">
+                                    <figure class="animate fadeInRight">
+                                        <img alt="image3" src="assets/img/frontpage/image3.jpg">
+                                        <figcaption>
+                                            <h3>Placerat facer possim</h3>
+                                            <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <!-- //Portfolio Item// -->
+                            <!-- Portfolio Item -->
+                            <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
+                                <a href="#">
+                                    <figure class="animate fadeInLeft">
+                                        <img alt="image4" src="assets/img/frontpage/image4.jpg">
+                                        <figcaption>
+                                            <h3>Nam liber tempor</h3>
+                                            <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <!-- //Portfolio Item// -->
+                            <!-- Portfolio Item -->
+                            <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
+                                <a href="#">
+                                    <figure class="animate fadeIn">
+                                        <img alt="image5" src="assets/img/frontpage/image5.jpg">
+                                        <figcaption>
+                                            <h3>Donec non urna</h3>
+                                            <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <!-- //Portfolio Item// -->
+                            <!-- Portfolio Item -->
+                            <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
+                                <a href="#">
+                                    <figure class="animate fadeInRight">
+                                        <img alt="image6" src="assets/img/frontpage/image6.jpg">
+                                        <figcaption>
+                                            <h3>Nullam consectetur</h3>
+                                            <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <!-- //Portfolio Item// -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Portfolio -->
+            <!-- === END CONTENT === -->
+            <!-- === BEGIN FOOTER === -->
+            <div id="base">
+                <div class="container bottom-border padding-vert-30">
+                    <div class="row">
+                        <!-- Disclaimer -->
+                        <div class="col-md-4">
+                            <h3 class="class margin-bottom-10">Disclaimer</h3>
+                            <p>All stock images on this template demo are for presentation purposes only, intended to represent a live site and are not included with the template or in any of the Joomla51 club membership plans.</p>
+                            <p>Most of the images used here are available from
+                                <a href="http://www.shutterstock.com/" target="_blank">shutterstock.com</a>. Links are provided if you wish to purchase them from their copyright owners.</p>
+                        </div>
+                        <!-- End Disclaimer -->
+                        <!-- Contact Details -->
+                        <div class="col-md-4 margin-bottom-20">
+                            <h3 class="margin-bottom-10">Contact Details</h3>
+                            <p>
+                                <span class="fa-phone">Telephone:</span>1-800-123-4567
+                                <br>
+                                <span class="fa-envelope">Email:</span>
+                                <a href="mailto:info@example.com">info@example.com</a>
+                                <br>
+                                <span class="fa-link">Website:</span>
+                                <a href="http://www.example.com">www.example.com</a>
+                            </p>
+                            <p>The Dunes, Top Road,
+                                <br>Strandhill,
+                                <br>Co. Sligo,
+                                <br>Ireland</p>
+                        </div>
+                        <!-- End Contact Details -->
+                        <!-- Sample Menu -->
+                        <div class="col-md-4 margin-bottom-20">
+                            <h3 class="margin-bottom-10">Sample Menu</h3>
+                            <ul class="menu">
+                                <li>
+                                    <a class="fa-tasks" href="#">Placerat facer possim</a>
+                                </li>
+                                <li>
+                                    <a class="fa-users" href="#">Quam nunc putamus</a>
+                                </li>
+                                <li>
+                                    <a class="fa-signal" href="#">Velit esse molestie</a>
+                                </li>
+                                <li>
+                                    <a class="fa-coffee" href="#">Nam liber tempor</a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <!-- End Sample Menu -->
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div id="footer" class="background-grey">
+                <div class="container">
+                    <div class="row">
+                        <!-- Footer Menu -->
+                        <div id="footermenu" class="col-md-8">
+                            <ul class="list-unstyled list-inline">
+                                <li>
+                                    <a href="#" target="_blank">Sample Link</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Sample Link</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Sample Link</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Sample Link</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Footer Menu -->
+                        <!-- Copyright -->
+                        <div id="copyright" class="col-md-4">
+                            <p class="pull-right">(c) 2014 Your Copyright Info</p>
+                        </div>
+                        <!-- End Copyright -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer -->
+            <!-- JS -->
+            <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
+            <script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+            <script type="text/javascript" src="assets/js/scripts.js"></script>
+            <!-- Isotope - Portfolio Sorting -->
+            <script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
+            <!-- Mobile Menu - Slicknav -->
+            <script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
+            <!-- Animate on Scroll-->
+            <script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
+            <!-- Sticky Div -->
+            <script type="text/javascript" src="assets/js/jquery.sticky.js" charset="utf-8"></script>
+            <!-- Slimbox2-->
+            <script type="text/javascript" src="assets/js/slimbox2.js" charset="utf-8"></script>
+            <!-- Modernizr -->
+            <script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+            <!-- End JS -->
+    </body>
+</html>
+<!-- === END FOOTER === -->
