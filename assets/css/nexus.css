@@ -1029,7 +1029,7 @@ p.site-slogan {
     Change the following styles to modify the appearance of the menu.
 */
 .slicknav_menu {
-  font-size: 18px;
+  font-size: 16px;
 }
 /* Button */
 .slicknav_btn {
@@ -1050,7 +1050,7 @@ p.site-slogan {
   background-color: #f5f5f5;
 }
 .slicknav_menu {
-  background: #27595d;
+  background: #803300;
   padding: 5px;
 }
 .slicknav_nav {
@@ -1461,21 +1461,6 @@ i.fa.center {
 .label-default [class*=" fa-"]:before {
   color: rgba(0, 0, 0, 0.3);
 }
-/* Remove from mobile menu */
-a.slicknav_item [class^="fa-"]:before,
-a.slicknav_item [class*=" fa-"]:before,
-.slicknav_menu li [class^="fa-"]:before,
-.slicknav_menu li [class*=" fa-"]:before {
-  display: none !important;
-}
-.slicknav_nav ul > li a[class^="fa-"],
-.slicknav_nav ul > li a[class*=" fa-"] {
-  padding-left: 14px !important;
-}
-a.slicknav_item [class^="fa-"],
-a.slicknav_item [class*=" fa-"] {
-  padding-left: 0 !important;
-}
 /*-----------------------------------------------------------------------------------*/
 /* Glyphicons */
 /*-----------------------------------------------------------------------------------*/
@@ -1699,11 +1684,11 @@ ul.grid li:first-child a {
   border-top-color: #ffffff;
 }
 .testimonials-bg-dark p {
-  background: #27595d;
+  background: #803300;
   color: #FFFFFF;
 }
 .testimonials-bg-dark p:after {
-  border-top-color: #27595d;
+  border-top-color: #803300;
 }
 /*-----------------------------------------------------------------------------------*/
 /* Accordions */
