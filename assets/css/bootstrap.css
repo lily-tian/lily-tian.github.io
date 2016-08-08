@@ -5772,13 +5772,3 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width: 600px) and (max-width: 750px) {
-  .misc {
-    min-width: 500px;
-  }
-}
-@media (min-width: 751px) {
-  .misc2 {
-    min-width: 320px;
-  }
-}
