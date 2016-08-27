@@ -1,3 +1,18 @@
 .misc{
   margin-left:5%;
 }
+.left-15{
+  margin-left:15%;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.caption {
+  font-size: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

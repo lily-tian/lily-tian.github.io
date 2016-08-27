@@ -1,0 +1,163 @@
+<!-- === BEGIN HEADER === -->
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+        <!-- Title -->
+        <title>Lily's Blog</title>
+        <!-- Meta -->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!-- Favicon -->
+        <link href="favicon.ico" rel="shortcut icon">
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+        <!-- Template CSS -->
+        <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+        <!-- Google Fonts-->
+        <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="body-bg">
+            <!-- Top Menu -->
+            <div id="hornav">
+                <div class="container no-padding border-bottom">
+                    <div class="row">
+                        <div class="col-md-8 no-padding">
+                            <div class="visible-lg">
+                                <ul id="hornavmenu" class="nav navbar-nav">
+                                    <li>
+                                        <a href="/" class="fa-home active">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/" class="fa-gears">Projects</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 no-padding">
+                            <ul class="social-icons pull-right">
+                                <li class="social-linkedin">
+                                    <a href="#" target="_blank" title="LinkedIn"></a>
+                                </li>
+                                <li class="social-github">
+                                    <a href="#" target="_blank" title="GitHub"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Menu -->
+            <!-- === END HEADER === -->
+            <!-- === BEGIN CONTENT === -->
+            <div id="content">
+                <div class="container background-white bottom-border">
+                    <div class="row margin-vert-30">
+                        <!-- Main Text -->
+                        <div class="col-md-10">
+                            <!-- Date -->
+                            <div class="blog-post-date">
+                                <a href="#">25 Aug 2016</a>
+                            </div>
+                            <!-- End Date -->
+                            <br>
+                            <br>
+                            <div class="blog-post left-15">
+                                <div class="blog-item-header">
+                                    <h2>
+                                        <a href="#">
+                                            A Glance at Cryptography
+                                        </a>
+                                    </h2>
+                                </div>
+                                <div class="blog-item">
+                                    <div class="blog-post-body row margin-top-15">
+                                        <div class="col-md-6">
+                                            <img class="margin-top-20 margin-bottom-20" src="assets/img/lilypics/letter.jpg" alt="image1">
+                                        </div>
+                                        <p>From the greek κρυπτός (kryptós) meaning "hidden" and γράφεινkryptós (graphein) meaning "writing".</p>
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebu.</p>
+                                        <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum erat, sed diam voluptua.</p>
+                                        <br>
+                                        <h3>XOR Encryption</h3>
+                                        <br>
+                                        <p>Exclusive or (XOR) is a logical operation that return true if inputs are different and false if inputs are the same. In bitwise operations, or operations at the individual bit (0 or 1) level, two patterns of equal length are taken and XOR applied on each pair of corresponding bits.</p>
+                                        <p>For example, take the letter "A". This is an ASCII character that has a corresponding binary 01000001. Then take the digit "8", or 00111000. The bitwise XOR will first compare the first bit of both patterns, 0 and 0. As they are the same, it will return 0. The next bits in both sequences, 1 and 0, are different and thus the XOR returns 1. Continuing this, it can be seen that "A" XOR "8" is 01111001, which corresponds to the lower case letter "y".</p>
+                                        <pre class="prettyprint lang-html">A:  0<b>1000</b>00<b>1</b><br>8:  0<b>0111</b>00<b>0</b><br>---------------<br>y:  0<b>1111</b>00<b>1</b></pre>
+                                        <p>One useful feature of XOR is that applying the same operation again will retrieve the initial value. In the example above, the XOR of "y" and "8" is 01000001, or the original letter "A". This effectively allows for simple encryption and decryption of data with a single key.</p>
+                                        <pre class="prettyprint lang-html">y:  0<b>1</b>11100<b>1</b><br>8:  0<b>0</b>11100<b>0</b><br>---------------<br>A:  0<b>1</b>00000<b>1</b></pre>
+                                        <p>However, in cryptography, XOR alone is insufficient. The key - "8" in this case -  must not remain fixed or it will be easy to uncover the connection between the plaintext and ciphertext. One way to hack the encryption is through <a href = "https://en.wikipedia.org/wiki/Brute-force_attack">brute force</a>, or simply trying every possible key until a coherent message appears. There are also alternative methods, such as <a href= "https://en.wikipedia.org/wiki/Frequency_analysis">frequency analysis</a>. For example, assume the language of the text is English. So it is with high probability that the letter "e" will appear with greater frequency than all other letters. Finding the XOR of "e" and the encrypted character of highest frequency can reveal the key, which  can then be used to decrypt the rest of the text.</p>
+                                        <p>Using a changing key is one way to overcome this problem, which leads us to the linear-feedback shift register.</p>
+                                        <h3>The Linear-Feedback Shift Register</h3>
+                                        <br>
+                                        <p>A linear feedback shift register stores a sequence of bits then performs a series of discrete step operations on those bits. As illustrated in the diagram below, the LFSR first requires an initial seed, or any sequence of bits. It then finds the XOR of the leftmost bit and the bit at the "tap" position, places the result to the right, removes the leftmost bit, and shifts all the bits to the left by one.</p>
+                                        <img class="center" src="assets/img/lilypics/lfsr.png" alt="image1">
+                                        <div class = "caption">Image </div>
+                                        <p>Repeating these steps will generate a new sequence of bits every time, which can then be put together to create pseudo-random keys used for encryption. As long as you know the initial seed and the tap location, you can use the LFSR to produce the same keys that will decrypt the ciphertext.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Blog Post -->
+                        </div>
+                        <!-- End Main Text -->
+                    </div>
+                </div>
+            </div>
+            <!-- === END CONTENT === -->
+            <!-- === BEGIN FOOTER === -->
+            <!-- Footer -->
+            <div id="footer">
+                <div class="container">
+                    <div class="row">
+                        <!-- Footer Menu -->
+                        <div id="footermenu" class="col-md-8">
+                            <ul class="list-unstyled list-inline">
+                                <li>
+                                    <span class="fa-phone">Telephone:</span>1-800-123-4567
+                                </li>
+                                <li>
+                                    <span class="fa-envelope">Email:</span>
+                                <a href="mailto:info@example.com">info@example.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Footer Menu -->
+                        <!-- Copyright -->
+                        <div id="copyright" class="col-md-4">
+                            <p class="pull-right">(c) 2016 lily-tian</p>
+                        </div>
+                        <!-- End Copyright -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer -->
+            <!-- JS -->
+            <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
+            <script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+            <script type="text/javascript" src="assets/js/scripts.js"></script>
+            <!-- Isotope - Portfolio Sorting -->
+            <script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
+            <!-- Mobile Menu - Slicknav -->
+            <script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
+            <!-- Animate on Scroll-->
+            <script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
+            <!-- Sticky Div -->
+            <script type="text/javascript" src="assets/js/jquery.sticky.js" charset="utf-8"></script>
+            <!-- Slimbox2-->
+            <script type="text/javascript" src="assets/js/slimbox2.js" charset="utf-8"></script>
+            <!-- Modernizr -->
+            <script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+            <!-- End JS -->
+            <!-- === END FOOTER === -->
+    </body>
+</html>
