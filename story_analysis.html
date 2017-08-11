@@ -8451,15 +8451,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -10439,8 +10439,6 @@ div#notebook {
     padding: 15px;
     background-color: #fff;
     min-height: 0;
-    -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
-    box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
   }
 }
 @media print {
@@ -11233,7 +11231,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11730,14 +11728,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -11801,7 +11799,7 @@ div#notebook {
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>								<span class="c1"># graphics supplemental</span>
 <span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="k">import</span> <span class="n">chisquare</span>					<span class="c1"># chi-squared</span>
 <span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="k">import</span> <span class="n">stopwords</span>					<span class="c1"># stop words</span>
-<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>		
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
 </pre></div>
 
 </div>
@@ -11812,21 +11810,6 @@ div#notebook {
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># installs corpus</span>
-<span class="c1">## import nltk</span>
-<span class="c1">## nltk.download()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># opens cleaned data</span>
@@ -11841,38 +11824,20 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># creates subset of data of online stories</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># installs corpus</span>
+<span class="c1">## import nltk</span>
+<span class="c1">## nltk.download()</span>
+
+<span class="c1"># creates subset of data of online stories</span>
 <span class="n">df_online</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="s1">&#39;online&#39;</span><span class="p">,</span> <span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-</pre></div>
 
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># sets current year</span>
+<span class="c1"># sets current year</span>
 <span class="n">cyear</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">year</span>
-</pre></div>
 
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># sets stop word list for text parsing</span>
+<span class="c1"># sets stop word list for text parsing</span>
 <span class="n">stop_word_list</span> <span class="o">=</span> <span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -11917,7 +11882,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># examines state of stories</span>
@@ -12043,7 +12008,7 @@ THt5+A5VSWLwnEpVHe1ePbMT+GZV/dVKz2uxPHOXpIHf6874DwI/A/ztCs/nhHjmLkkN8sxdkhpk
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># examines when stories first created</span>
@@ -12288,7 +12253,7 @@ UTmIiEgrKgcREWlF5SAiIq38f/2Py/oSZSgMAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># examines top genres individually</span>
@@ -12565,7 +12530,7 @@ RU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># creates contingency table</span>
@@ -12819,7 +12784,7 @@ HxGFRKXgd8+7AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># examines state of stories</span>
@@ -13052,7 +13017,7 @@ YII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># examines distribution of languages</span>
@@ -13243,7 +13208,7 @@ SEpUqCIiKVGhioikRIUqIpKS/w8JTYOv1zZ/RgAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># examines distribution of media</span>
@@ -13454,7 +13419,7 @@ A6cIUgqiI6TAAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># examines distribution of media</span>
@@ -13711,7 +13676,7 @@ IyIa8/8DQOz5uvTS35kAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_online</span><span class="p">[</span><span class="s1">&#39;top_fandom&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_online</span><span class="p">[</span><span class="s1">&#39;fandom&#39;</span><span class="p">]</span>
@@ -13726,7 +13691,7 @@ IyIa8/8DQOz5uvTS35kAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">entry_fandom</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df_online</span><span class="o">.</span><span class="n">pub_year</span><span class="p">,</span> <span class="n">df_online</span><span class="o">.</span><span class="n">top_fandom</span><span class="p">)</span>
@@ -13984,7 +13949,7 @@ vrIecTFWj4iIRE68dPWIiEiEqPCLiPiMCr+IiM+o8IuI+Mz/B2Ga2mmPKFcyAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># examines distribution of number of words</span>
@@ -14265,12 +14230,12 @@ lZIGCqWUUilpoFBKKZXS/wcfzePZmHJlywAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># examines distribution of number of chapters</span>
 <span class="n">df_online</span><span class="p">[</span><span class="s1">&#39;chapters&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_online</span><span class="p">[</span><span class="s1">&#39;chapters&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">df_online</span><span class="p">[</span><span class="s1">&#39;chapters&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">normed</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+<span class="n">df_online</span><span class="p">[</span><span class="s1">&#39;chapters&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">normed</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                                 <span class="n">bins</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">df_online</span><span class="o">.</span><span class="n">chapters</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -14401,7 +14366,7 @@ jaUgSWosBUlSYylIkhpLQZLU/D+GNbvQC2GYKAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># examines distribution of story status</span>
@@ -14586,7 +14551,7 @@ IsH5/zosvrWcf2I1AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">complete</span> <span class="o">=</span> <span class="n">df_online</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_online</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="s1">&#39;Complete&#39;</span><span class="p">,</span> <span class="s1">&#39;chapters&#39;</span><span class="p">]</span>
@@ -14711,11 +14676,11 @@ yLhLUkPGXZIaMu6S1JBxl6SGjLskNWTcJakh4y5JDf0fB8wMXGWcHvkAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">days</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Thursday&#39;</span><span class="p">,</span> <span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saturday&#39;</span><span class="p">,</span> <span class="s1">&#39;Sunday&#39;</span><span class="p">]</span>
-<span class="n">months</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;NA&#39;</span><span class="p">,</span> <span class="s1">&#39;January&#39;</span><span class="p">,</span> <span class="s1">&#39;February&#39;</span><span class="p">,</span> <span class="s1">&#39;March&#39;</span><span class="p">,</span> <span class="s1">&#39;April&#39;</span><span class="p">,</span> <span class="s1">&#39;May&#39;</span><span class="p">,</span> <span class="s1">&#39;June&#39;</span><span class="p">,</span> <span class="s1">&#39;July&#39;</span><span class="p">,</span> 
+<span class="n">months</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;NA&#39;</span><span class="p">,</span> <span class="s1">&#39;January&#39;</span><span class="p">,</span> <span class="s1">&#39;February&#39;</span><span class="p">,</span> <span class="s1">&#39;March&#39;</span><span class="p">,</span> <span class="s1">&#39;April&#39;</span><span class="p">,</span> <span class="s1">&#39;May&#39;</span><span class="p">,</span> <span class="s1">&#39;June&#39;</span><span class="p">,</span> <span class="s1">&#39;July&#39;</span><span class="p">,</span>
           <span class="s1">&#39;August&#39;</span><span class="p">,</span> <span class="s1">&#39;Septemeber&#39;</span><span class="p">,</span> <span class="s1">&#39;October&#39;</span><span class="p">,</span> <span class="s1">&#39;November&#39;</span><span class="p">,</span> <span class="s1">&#39;December&#39;</span><span class="p">]</span>
 </pre></div>
 
@@ -14726,7 +14691,7 @@ yLhLUkPGXZIaMu6S1JBxl6SGjLskNWTcJakh4y5JDf0fB8wMXGWcHvkAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># examines when stories first created</span>
@@ -14756,146 +14721,146 @@ yLhLUkPGXZIaMu6S1JBxl6SGjLskNWTcJakh4y5JDf0fB8wMXGWcHvkAAAAASUVORK5CYII=
 
 <div class="output_png output_subarea ">
 <img src="data:image/png;base64,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
-AAALEgAACxIB0t1+/AAAHtpJREFUeJzt3XuYXVWd5vHvSwECKoKSthHQoAYl4w0MNIitLWgPUSFO
-qw14YQadRkZAW+wLarfa6mN7wb7gKJARUEaFRkAn2oyACLS0cgkXwYCMEbSBxsdgKyIoGHjnj7WL
-nBQVcpKctU+q1vt5nnqos/c557cr1H7PrrXWXku2iYiIdmwy7gOIiIh+JfgjIhqT4I+IaEyCPyKi
-MQn+iIjGJPgjIhqT4I+IaEyCPyKiMQn+iIjGbDruA5jOdttt57lz5477MCIiZoyrrrrqTttzhnnu
-Rhn8c+fOZenSpeM+jIiIGUPSj4d9bpp6IiIak+CPiGhMgj8iojEJ/oiIxiT4IyIak+CPiGhMgj8i
-ojEJ/oiIxiT4IyIas1HeuftI5h77z+v1uh995BUjPpKIiJlpxgV/n/IhExGzUZp6IiIak+CPiGhM
-gj8iojFp49+IpE8hIvqQ4G9YPmgi2pSmnoiIxuSKP3qTvzAiNg654o+IaEyCPyKiMQn+iIjGJPgj
-IhqTzt2YtfruTE7ndcwUueKPiGhMgj8iojEJ/oiIxiT4IyIaI9vjPoaHWbDLY73008+fdt9lN/9s
-vd5zr6c+YZ1f02et1Eu9iA2hl11yle0Fwzw3V/wREY3ZOK/4Fyzw0qVLp93X55C52T4cMPVmdr2I
-QZJyxR8REdMbKvgl7S/pJknLJR07zX5JOr7bf52k3Qf2vUPSMknfk3S6pC1G+QNERMS6WWvwS5oA
-PgUsBOYDh0iaP+VpC4F53dfhwAnda3cA3gYssP0sYAI4eGRHHxER62yYK/49geW2b7Z9P3AGsGjK
-cxYBp7m4DNhG0vbdvk2BLSVtCmwF/PuIjj0iItbDMMG/A3DrwOPbum1rfY7t24HjgH8D7gDusn3+
-+h9uRERsqKqdu5K2pfw1sDPwJODRkt6whuceLmmppKUrVqyoeVgREU0bZnbO24GdBh7v2G0b5jkv
-BW6xvQJA0jnAC4DPTy1iezGwGMpwziGPP6JZGa4a62uYK/4rgXmSdpa0OaVzdsmU5ywBDu1G9+xF
-adK5g9LEs5ekrSQJ2A+4cYTHHxER62itV/y2V0o6CjiPMirnFNvLJB3R7T8ROBd4ObAcuBc4rNt3
-uaSzgKuBlcA1dFf1ERExHkMtxGL7XEq4D247ceB7A0eu4bXvA963AccYEQ1K01I9uXM3IqIxCf6I
-iMYk+CMiGpPgj4hoTII/IqIxQ43qiYiY7dZnFNFMHUGUK/6IiMYk+CMiGpPgj4hoTII/IqIxCf6I
-iMYk+CMiGpPgj4hoTII/IqIxCf6IiMYk+CMiGpPgj4hoTII/IqIxCf6IiMYk+CMiGpPgj4hoTII/
-IqIxCf6IiMYk+CMiGpPgj4hoTII/IqIxWWw9IqJn67OwO4xucfdc8UdENCbBHxHRmAR/RERjEvwR
-EY1J8EdENCbBHxHRmAR/RERjEvwREY1J8EdENGao4Je0v6SbJC2XdOw0+yXp+G7/dZJ2H9i3jaSz
-JH1f0o2S9h7lDxAREetmrcEvaQL4FLAQmA8cImn+lKctBOZ1X4cDJwzs+0fg67afCTwXuHEExx0R
-EetpmCv+PYHltm+2fT9wBrBoynMWAae5uAzYRtL2kh4HvAg4GcD2/bZ/McLjj4iIdTRM8O8A3Drw
-+LZu2zDP2RlYAZwq6RpJn5H06A043oiI2EC1O3c3BXYHTrC9G3AP8LA+AgBJh0taKmnpihUrKh9W
-RES7hgn+24GdBh7v2G0b5jm3AbfZvrzbfhblg+BhbC+2vcD2gjlz5gxz7BERsR6GCf4rgXmSdpa0
-OXAwsGTKc5YAh3aje/YC7rJ9h+2fALdKekb3vP2AG0Z18BERse7WuhCL7ZWSjgLOAyaAU2wvk3RE
-t/9E4Fzg5cBy4F7gsIG3OBr4QvehcfOUfRER0bOhVuCyfS4l3Ae3nTjwvYEj1/Daa4EFG3CMEREx
-QrlzNyKiMQn+iIjGJPgjIhqT4I+IaEyCPyKiMQn+iIjGJPgjIhqT4I+IaEyCPyKiMQn+iIjGJPgj
-IhqT4I+IaEyCPyKiMQn+iIjGJPgjIhqT4I+IaEyCPyKiMQn+iIjGJPgjIhqT4I+IaEyCPyKiMQn+
-iIjGJPgjIhqT4I+IaEyCPyKiMQn+iIjGJPgjIhqT4I+IaEyCPyKiMQn+iIjGJPgjIhqT4I+IaEyC
-PyKiMQn+iIjGJPgjIhqT4I+IaEyCPyKiMUMFv6T9Jd0kabmkY6fZL0nHd/uvk7T7lP0Tkq6R9LVR
-HXhERKyftQa/pAngU8BCYD5wiKT5U562EJjXfR0OnDBl/9uBGzf4aCMiYoMNc8W/J7Dc9s227wfO
-ABZNec4i4DQXlwHbSNoeQNKOwCuAz4zwuCMiYj0NE/w7ALcOPL6t2zbsc/4B+AvgwUcqIulwSUsl
-LV2xYsUQhxUREeujaueupFcCP7V91dqea3ux7QW2F8yZM6fmYUVENG2Y4L8d2Gng8Y7dtmGesw9w
-oKQfUZqI9pX0+fU+2oiI2GDDBP+VwDxJO0vaHDgYWDLlOUuAQ7vRPXsBd9m+w/a7bO9oe273um/a
-fsMof4CIiFg3m67tCbZXSjoKOA+YAE6xvUzSEd3+E4FzgZcDy4F7gcPqHXJERGyItQY/gO1zKeE+
-uO3Ege8NHLmW97gYuHidjzAiIkYqd+5GRDQmwR8R0ZgEf0REYxL8ERGNSfBHRDQmwR8R0ZgEf0RE
-YxL8ERGNSfBHRDQmwR8R0ZgEf0REYxL8ERGNSfBHRDQmwR8R0ZgEf0REYxL8ERGNSfBHRDQmwR8R
-0ZgEf0REYxL8ERGNSfBHRDQmwR8R0ZgEf0REYxL8ERGNSfBHRDQmwR8R0ZgEf0REYxL8ERGNSfBH
-RDQmwR8R0ZgEf0REYxL8ERGNSfBHRDQmwR8R0ZgEf0REYxL8ERGNGSr4Je0v6SZJyyUdO81+STq+
-23+dpN277TtJukjSDZKWSXr7qH+AiIhYN2sNfkkTwKeAhcB84BBJ86c8bSEwr/s6HDih274SeKft
-+cBewJHTvDYiIno0zBX/nsBy2zfbvh84A1g05TmLgNNcXAZsI2l723fYvhrA9t3AjcAOIzz+iIhY
-R8ME/w7ArQOPb+Ph4b3W50iaC+wGXL6uBxkREaPTS+eupMcAZwN/avuXa3jO4ZKWSlq6YsWKPg4r
-IqJJwwT/7cBOA4937LYN9RxJm1FC/wu2z1lTEduLbS+wvWDOnDnDHHtERKyHYYL/SmCepJ0lbQ4c
-DCyZ8pwlwKHd6J69gLts3yFJwMnAjbb/bqRHHhER62XTtT3B9kpJRwHnARPAKbaXSTqi238icC7w
-cmA5cC9wWPfyfYA3AtdLurbb9m7b5472x4iIiGGtNfgBuqA+d8q2Ewe+N3DkNK+7FNAGHmNERIxQ
-7tyNiGhMgj8iojEJ/oiIxiT4IyIak+CPiGhMgj8iojEJ/oiIxiT4IyIak+CPiGhMgj8iojEJ/oiI
-xiT4IyIak+CPiGhMgj8iojEJ/oiIxiT4IyIak+CPiGhMgj8iojEJ/oiIxiT4IyIak+CPiGhMgj8i
-ojEJ/oiIxiT4IyIak+CPiGhMgj8iojEJ/oiIxiT4IyIak+CPiGhMgj8iojEJ/oiIxiT4IyIak+CP
-iGhMgj8iojEJ/oiIxiT4IyIaM1TwS9pf0k2Slks6dpr9knR8t/86SbsP+9qIiOjXWoNf0gTwKWAh
-MB84RNL8KU9bCMzrvg4HTliH10ZERI+GueLfE1hu+2bb9wNnAIumPGcRcJqLy4BtJG0/5GsjIqJH
-wwT/DsCtA49v67YN85xhXhsRET3adNwHMEnS4ZRmIoBfSbppPd5mO+DOad//o+t7ZBtFrdRLvdTb
-COttZD/bU4YtMEzw3w7sNPB4x27bMM/ZbIjXAmB7MbB4iONZI0lLbS/YkPfYGGulXuqlXjv1+qg1
-TFPPlcA8STtL2hw4GFgy5TlLgEO70T17AXfZvmPI10ZERI/WesVve6Wko4DzgAngFNvLJB3R7T8R
-OBd4ObAcuBc47JFeW+UniYiIoQzVxm/7XEq4D247ceB7A0cO+9qKNqipaCOulXqpl3rt1KteSyWz
-IyKiFZmyISKiMQn+iIjGJPiHJOkTkv7TuI+jJklbSnrGuI+jBklHS9p23McRsTGY0cEvaULScT2V
-uxFYLOlySUdIelyNIpIe/0hfNWp2dQ8ArgW+3j1+nqSqQ28lPbvm+0/xROBKSWd2EweqZjFJFw6z
-bSaTdICkXjKkz3O951yZrHdRX/Vghge/7QeAF/ZU6zO29wEOBeYC10n6oqSXjLjUVcDS7r9Tv5aO
-uNag91PmVvoFgO1rgZ0r1gP4tKQrJL211gfpJNt/RZlE8GTgvwE/kPRhSU8bZR1JW3Qf0NtJ2nbg
-Q3sulacrkbSPpAsk/T9JN0u6RdLNFUseRPl3/JikZ1as0/e53lutgXoP1j4HBm00UzZsgGu6K9Mv
-AfdMbrR9zqgLdbONPrP7uhP4LnCMpLfYPngUNWzXDts1+a3tu6ZcCFcd8mX79yXNA94EXCXpCuBU
-2xdUqmdJPwF+AqwEtgXOknSB7b8YUZm3AH8KPInyYT35D/pL4H+OqMaanAy8o6v7QOVa2H6DpK2B
-Q4DPSjJwKnC67bsrlOztXO+5FsCvgOslXTCl3ttqFJvxwzklnTrNZtt+04jr/D1wAHAhcLLtKwb2
-3WR7JG3jkp5p+/uDaxoMsn31KOpMU/dkys92LPBq4G3AZraPqFFvSu0J4FXA8ZSAFPDuUZ5kkt5O
-+WvtTuAzwFds/7ZrqviB7VFf+R9t+5OjfM8hal5u+/f6rNnVfQLwRsoH3o3A04HjR/3z93Wu912r
-q/dfp9tu+3NV6s304O+LpMOAM23fM82+x9m+a0R1Fts+fA1tfra97yjqTFN3K+A9wB9Sgvc84IO2
-f1OjXlfzOZS7vF8BXED5QL1a0pOA79geetKpIWq9n/LXxI+n2ber7RtHVat7z9cCX7d9t6S/AnYH
-PlTjg3vgIuGPKXfInwPcN7m/4sXCIkqz2dOB04DP2f5p97t0g+25NerOVpK2BJ5se30mqFy3WjM9
-+CXtQln45Ym2n9WFyYG2PzSi95/2yntSpRN5E2Bv2/866vfemEi6hHL1fZbtX0/Z90bb/3tEdSaA
-ZbartkNPqXmd7edIeiHwIeDjwHtrXJGvpWOw5sXCZynTsPzLNPv2sz3Szuza5/q4anX1DgCOAza3
-vbOk5wEfsH1glXqzIPgvAf4cOMn2bt2279l+1ojef1wn1TWTP08ful/0P6N0XD/U91Pr5+ubpP8D
-HG3733qqd43t3ST9LXC97S/2/f+0pu7D9Bu2Rz244ZFqVj3Xx1Wre++rgH2Bi/uoNxs6d7eyfcWU
-TsmVo3rzPn+xp7hQ0quBc9zPp/OXgBMpV+DVOwYBuo7dv6Usy7nF5HbbT61QbltgWdeBPNh5VuWK
-Crhd0knAy4CPSnoUlUfRSfow8DHbv+gebwu8sxvRNFK2H5D04CibOYdQ9VwfYy2YfnDFg7WKzYbg
-v7MbkmcASa8B7hh1EUmHTrfd9mmjrtV5C3AM8ICkX1Pa3W1760r1Vto+odJ7r8mpwPuAvwdeQmnv
-rxWOf13pfdfkj4H9geNs/0JlKdI/r1xzoe13Tz6w/XNJLwdGHvydXkei0NO5PoZaUC5KXgdMdBdE
-bwO+XavYbGjqeSplNrsXAD8HbgFeP10n3gbWGRyhsAWwH3C17deMss64dJ2fPwW+zOodg/9RseZV
-tp8v6Xrbzx7cVqtmXyQ9ebrtNZuaJF0H7GH7vu7xlsBS21XuOO99JEpP53rftbp6vQ6umPHBP0nS
-o4FNKo0fnq7eNsAZtvevWOOPKDeSGPiW7a9UrHXLNJtdqdllsua3KT/fWcA3KauzfWRUQ2On1NoL
-+CSwK7A5ZfTLPbX+gpJ0PeX/mygXCjsDN9UK4a7mX1KGHE8ORTwMWGL7Y7VqjkOf5/oYcmVrynlX
-td6MD/5uDPH7WBWQl1J6w39Wue5mwPdqhFT3/p+mDJM7vdt0EPBD29OuezATSdqDMu57G+CDwOMo
-bdSXVai1lLIC3JeABZQx/bvYfteoa62h/u7AW23/98p19gde2j28wPZ5FWv12UfT67ned65058Ip
-wGO7TXcBb7J9VZV6syD4LwD+Bfh8t+n1wB/YfumaX7Vedb7KqjtZJyi/7Gfa/stR1hmo931g18mO
-3W6I5zLbu1aq13cfRq/UrWM6Ocyy29b3yKmHmrQqvPc4Rtlcyqo+mgPo+mhsv7dSvV7O9b5rdfWu
-A460/a3u8QuBT0/+ro7abOjc3d72Bwcef0jSQRXqHMeq4F8J/Nj2tAvHj8hy4MnAZJviTt22WvYY
-+P6hPgzKjTkjpbVM/lZppM29Kus+XyvpY5SOumqjbCQdM/BwE8oNXP9eq96YRtlsaftCSeravt/f
-DUusEvz0d673XQvggcnQB7B9qaRqo4hmQ/CfL+lg4Mzu8WsoHSMjIeluVrXVDrKk+4AfAu8Z9c0q
-lD/5buyGH0IJ5isnQ3PU4Wj76MHHk30Yo6wxYG/gVkoz1uU8/N+2hjdS/lI7ijKfzU6UqSlqeezA
-9yuBfwbOrlgP+h9lc1/3l+gPVNbWvh14TKVaUPlcH0ctrbpB9JJu+O/plLw5CLh41PUeqjtTm3qm
-BPKjWTXmdRPgVxWHPQ4ewwTwLOALo77RQtKLBx8Cv09po34rgO1LRllvmvrV+jC6f7eXUSb3eg4l
-FE+3vWzUtVoyhlE2vfTR9Hmu950rY7tBdKYG/8ZEZXbOkyq8727A64DXUoaTneNKE3/13YcxUPdR
-lA+AjwN/Y7vKDJbdqKWH/bJX7Igc/PecdBdlau2Tag3TixjGbGjqmZzsay6rTzVQa/rUhxll6KtM
-nXBI93Un8E+UD+janXa99mF0gf8Kys85lzIz55dr1aOM5Jm0BeXDtNrCNsDNwBxWH5V1N7AL8L8o
-TU8jNYZRNhcx/YdptWk++jzXJR0IvKh7eLHtr9Wo09V6IvBh4Em2F0qaT5mv6+Qq9Wb6Fb+kUyjN
-BctY9WeZXWn61NokPQh8C3iz7eXdtpsrnrxr7MOg3Mg18j4MSadRmsjOpdwL8b1Rvfc6Hke1m8Uk
-XWl7j+m2SVpWYzz/GEbZDP7bbUHpM1np0a1tMLVeb+e6pI9Q+tW+0G06hHIzXJXhv5L+L+X+i/fY
-fq6kTYFrqo0CmwXBf4Pt+eM+jlGR9CpKW/4+lGUQzwA+4zEs0FKrD6P7cJvsfBz8Baw2LYVWn2V1
-E8pfAP/D9nNHXaurdyPwnyfv1O3u5D3P9q61hpFuDHdCS7rC9p6V3ru3c70bXvk82w92jycoQVxl
-eOXARcFDvxuSrrX9vBr1ZkNTz3ckzbd9w7gPZBS6u3O/0t0xuIiyuMXvSDoB+LLt83s8lgeA72r1
-6SpG8b7jWPLzEwPfrwR+RJlPp5Z3ApdK+iHlA21n4K3d/9cqna30PMpGq68BvQnwfEoHby19n+vb
-AJNTltReFvGe7qaxyft29qL0CVUxG674XwwsoSyndx+rrhqrfDKPg8osi68FDrK937iPJ4bT9WNM
-rgFwU+0O3T7vhO7qTXaYi/Jhegvl7tZLK9Xr7VyXdAjwEeCirs6LgHfZrjLEufuL9JOUv7C/R+kf
-eo3t66rUmwXBv5wyi+X1DExj6kqTKcXM1IXwq3l4x+AHKtWb7XdC975YUN/nusqMqpP9NFfY/kmN
-OgP1NgWeQfmgucn2b6vVmgXB/x3be4/7OGLjJunrlD+dV1uI3PYn1viiDavX22yuY7oTehxTXvR2
-rku6cOpf19NtG2G9Ccoot7msfmHydzXqzYY2/mskfRH4KqtPJ9zbcM6YEXZ0xZlUp2rgTmjof7Gg
-6ue6pC2ArYDtuibWyX/LrYEdRlVnGl8FfsOUv2ZqmQ3BvyXll+APB7aZsuB0xKRvS3q27evHVP8e
-oNYU17/LqjuhX0d/d0L3vVhQH+f6WygDKp5E+etwMvh/CVS5ubCzY5/9kjO+qSdiGJJuoExzfQs9
-DAKY5k7oXSl3Qh9bo95A3V7uhJ7tJB1d6y75NdT7KHBhX6P2ZvwVf3en6wnAE20/q7uz70DbHxrz
-ocXGZWHP9Y4b+H4lJfyrze44hjuhJ+v2uVhQn+f6g5K28errFx9i+9MVagFcBny56zT/LZX/eprx
-V/ySLqGsZXqSe1idPmY2Sb/D6tMZ1FwKcepcS2fXuAIf153Q6nmxoD7P9elunqrZmd0NjV0EXN9H
-f8mMv+IHtrJ9hVZfnb7aPNYxM3XzrnyC0nb7U+AplDHvI506YUxzLb2B0ofwduBtA+dC7Tb3fVl9
-saDPUaZTqKXPc31CkgZ+tgnKkp213EqZDbeXK/HZEPx3Snoaq+54ew1lkY2IQR8E9qKsUrWbpJdQ
-AnPUvk+Za+mVA3MtvaNCnYeM6U5o6H+xoD7P9fOAf1KZIx/gCMoUKrXcDFzczdkzOGIpwznX4Ehg
-MfBMSbdT/qSucULHzPZb2z+TtImkTWxfJOkfKtT5I8pcSxd19w6cQX/DK3sx0HE9uFiQgd8Drnik
-126g6c7111eq9dfAn9Ctf0H5IKgyU2bnlu5rc+r+ZQHMgjb+Sd0cKJu48ur0MTNJ+gbwKspt+E+g
-NPfsYfsFlepNzrV0CKVJ5DR6nmupFq2+SNDDuNIiQZImXJaYrHaud3fPfpgys+mt3eYnU2bOfHfN
-u2m7+lvZvrdmDai45mhfJH24632/x/bdkraVlBE9MdWBwL2UdvCvU5okXlmrWPf7+EXbBwA7AtcA
-VRe16YvtSya/KJPdbdZ9fwVlneZabpG0mNJk96tKNT5OWafhqbZ3t707ZYK9x7H6SK2RkrR3N+T4
-+93j53ad53XqzfQr/ul62iVd3f0Pi8Zp1XoDq23u/vsb6q2ZPOtJ+hPgcODxtp+mshDMiRWnNdiK
-8mF9MGXx+q9RRjGNbFI4ST8Adpnaydp17n7f9rxR1Zry/pdT1vVd0sfoxNnQxj8h6VG27wOQtCXw
-qDEfU2wkbD92Tfs0sN5A999YN0cCe1KmicD2D7rhslV0TSBnAmd24+r/EbiEco/ECMs8/Gq4a2Kq
-epVs+9YpI5YeWNNzN9SMb+qhnLQXSnqzpDcDF1BvvvOYRWw/YPu7lOlwY93dZ/v+yQdd+3jVcJT0
-4q4J5CrK/RijXlPhhulmVpX0BrpmmEpulfQCwJI2k/RnlOHGVcz4ph4ASfsDL+0eXmD7vHEeT0QL
-JH0M+AVwKHA0ZQTMDbbfU6nejyh9JWdSmkTueeRXrFeNHShz//ya8uECZbW2LYH/4krrUEvajvIX
-zEspTZHnA2+z/R+P+ML1rTdLgv8pwDzb3+jaAScyuieirm56gTdTJk0TZcjjZ2rdhCRpa9u/rPHe
-09Tal1U3991Quw9I0j5T1zaYbtvI6s304O+7gymidZKeXHOqi0eouyOlWW6fbtO3gLfbvq3vYxm1
-6Qak1BykMhs6d3vtYIoIvkIZVYOks22/uqe6pwJfpMx9BOVGzVMpU1LPSJL2Bl4AzJF0zMCurRlt
-p/VqZkPnbu8dTBGNGxx6UmuNgenMsX2q7ZXd12cpa9POZJsDj6FchD924OuXlOGdVcyGK/5LJL0b
-2FLSyygdTF8d8zFFzGZew/e1/awbXTM5G+ghwM96rD9y3Y1vl0j6rO0fS9q6bK7bRzkb2vh77WCK
-aJ2kByizgYoy2mVyioG6c8iXQRyfpCw1aeDblJEvvfc3jJqkBZRmq8n7Tu4C3mT7qjW/agPqzYZ8
-lDQHwPaKcR9LRMS6knQdcKTtb3WPXwh82pVWiJuxTT0qt7i9DziKrq+iuxL5pO0PjPPYImJ0JL33
-EXbb9gd7O5h6HpgMfQDbl0qqtq7ITO7cfQdlWNceth9v+/GUaWH3qT3/eUT06p5pvqA08c6Kie8o
-7fwnSfqDgbuTL5a0u6SRD+mcsU09kq4BXmb7zinb5wDn11oiLSLGR9JjKTOsvplyB+8nbP90vEe1
-4SRd9Ai7bXvfUdabsU09lKlg75y60fYKSZuN44Aiog5JjweOoSy88jlgd9s/H+9RjU7lpTkfZiY3
-9dy/nvsiYgaR9HHgSuBu4Nm23z+bQh9A0hMlndwtvYik+d2kk3XqzeCmnskhZQ/bBWxhO1f9EbOA
-pAcp69CuZPX7BmovJt+bLvBPpawN8dzuRtRrbD+7Rr0Z29Rju9rtzBGx8RjjYvJ92s72mZLeBWB7
-ZXdxW0UL/6ARERu7eyQ9ge4vGkl7UW7iqmLGXvFHRMwixwBLgKdJ+lfKHETV5urJFX9ExJhI2kPS
-79q+Gngx8G5Kf8b5QLXpphP8ERHjcxKrRiG+AHgP8Cng58DiWkXT1BMRMT4TA8srHgQstn02cLak
-a2sVzRV/RMT4THRDNwH2A745sK/ahXmu+CMixud0yjw9d1IWeJ+cnfPpVBzVM2Nv4IqImA26oZvb
-U+YYu6fbtgvwmK7Td/Q1E/wREW1JG39ERGMS/BERjUnwR0Q0JsEfEdGYBH9ERGP+P+SlSboxAFDg
-AAAAAElFTkSuQmCC
+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
 "
 >
 </div>
@@ -14917,7 +14882,7 @@ AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">month_xs</span> <span class="o">=</span> <span class="n">chisquare</span><span class="p">(</span><span class="n">month</span><span class="p">)</span>
@@ -14941,11 +14906,11 @@ AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># examines when stories first created</span>
-<span class="n">dayofweek</span> <span class="o">=</span> <span class="p">[</span><span class="n">days</span><span class="p">[</span><span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span><span class="o">.</span><span class="n">weekday</span><span class="p">()]</span> 
+<span class="n">dayofweek</span> <span class="o">=</span> <span class="p">[</span><span class="n">days</span><span class="p">[</span><span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span><span class="o">.</span><span class="n">weekday</span><span class="p">()]</span>
              <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df_online</span><span class="p">[</span><span class="s1">&#39;published&#39;</span><span class="p">]]</span>
 <span class="n">dayofweek</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">dayofweek</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="p">(</span><span class="n">dayofweek</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dayofweek</span><span class="p">))</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">()</span>
@@ -15130,7 +15095,7 @@ RETHJPgjIjrmXwHsjb+GtiMn6wAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dayofweek_xs</span> <span class="o">=</span> <span class="n">chisquare</span><span class="p">(</span><span class="n">dayofweek</span><span class="p">)</span>
@@ -15180,7 +15145,7 @@ RETHJPgjIjrmXwHsjb+GtiMn6wAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># examines word/character count of titles</span>
@@ -15429,7 +15394,7 @@ QmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># examines word/character count of titles</span>
@@ -15722,10 +15687,10 @@ xUQiSWrFRCJJasVEIklqxUQiSWrFRCJJauX/Ax5TKLmS+IbXAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">title_eng_wf</span> <span class="o">=</span> <span class="p">[</span><span class="n">row</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">))</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">title_eng_wf</span> <span class="o">=</span> <span class="p">[</span><span class="n">row</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">))</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
               <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df_online</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_online</span><span class="o">.</span><span class="n">language</span> <span class="o">==</span> <span class="s1">&#39;English&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">]]</span>
 <span class="n">title_eng_wf</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">title_eng_wf</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span><span class="p">]</span>
 <span class="n">title_eng_wf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">title_eng_wf</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -15738,10 +15703,10 @@ xUQiSWrFRCJJasVEIklqxUQiSWrFRCJJauX/Ax5TKLmS+IbXAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">((</span><span class="n">title_eng_wf</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="n">row</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_word_list</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">((</span><span class="n">title_eng_wf</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="n">row</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_word_list</span>
                         <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">title_eng_wf</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">values</span><span class="p">]][:</span><span class="mi">10</span><span class="p">]</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">title_eng_wf</span><span class="p">))</span><span class="o">.</span><span class="n">to_string</span><span class="p">())</span>
 </pre></div>
 
@@ -15761,8 +15726,8 @@ xUQiSWrFRCJJasVEIklqxUQiSWrFRCJJauX/Ax5TKLmS+IbXAAAAAElFTkSuQmCC
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>love      0.010117
 new       0.004404
-one       0.004285
 time      0.004285
+one       0.004285
 day       0.003690
 night     0.003333
 life      0.002856
@@ -15797,10 +15762,10 @@ never     0.002142
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">summary_eng_wf</span> <span class="o">=</span> <span class="p">[</span><span class="n">row</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">))</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">summary_eng_wf</span> <span class="o">=</span> <span class="p">[</span><span class="n">row</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">))</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
               <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df_online</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_online</span><span class="o">.</span><span class="n">language</span> <span class="o">==</span> <span class="s1">&#39;English&#39;</span><span class="p">,</span> <span class="s1">&#39;summary&#39;</span><span class="p">]]</span>
 <span class="n">summary_eng_wf</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">summary_eng_wf</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span><span class="p">]</span>
 <span class="n">summary_eng_wf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">summary_eng_wf</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -15813,10 +15778,10 @@ never     0.002142
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">((</span><span class="n">summary_eng_wf</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="n">row</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_word_list</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">((</span><span class="n">summary_eng_wf</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="n">row</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_word_list</span>
                         <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">summary_eng_wf</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">values</span><span class="p">]][:</span><span class="mi">10</span><span class="p">]</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">summary_eng_wf</span><span class="p">))</span><span class="o">.</span><span class="n">to_string</span><span class="p">())</span>
 </pre></div>
 
@@ -15895,7 +15860,7 @@ first      0.002023
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;New Love&#39;</span>
@@ -15921,7 +15886,7 @@ first      0.002023
 
 
 <div class="output_html rendered_html output_subarea ">
-<a href>New Love</a><br>Remember the first time in your life that you wrote a story based off some character you really liked? 
+<a href>New Love</a><br>Remember the first time in your life that you wrote a story based off some character you really liked?
 Thinking no one would find your little oneshot? Well, guess who now knows about it... AU.<br><span style="color:grey">Not Harry Potter - Rated: T - English - Romance/Humor - Words: 8,290 - Published: Dec 22, 2013</body>
 </div>
 
