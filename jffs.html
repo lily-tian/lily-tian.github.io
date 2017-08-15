@@ -1,0 +1,242 @@
+<html>
+ <!-- === START GETTING STYLES === -->
+ <head lang="en">
+  <!-- Title -->
+  <title>
+   Lily's Blog
+  </title>
+  <!-- Meta -->
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <meta content="" name="description"/>
+  <meta content="" name="author"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+   <!-- Favicon -->
+   <link href="favicon.ico" rel="shortcut icon"/>
+   <!-- Bootstrap Core CSS -->
+   <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+   <!-- Template CSS -->
+   <link href="jupn.css" id="custom" rel="stylesheet"/>
+   <link href="assets/css/animate.css" rel="stylesheet"/>
+   <link href="assets/css/font-awesome.css" rel="stylesheet"/>
+   <link href="assets/css/nexus.css" rel="stylesheet"/>
+   <link href="assets/css/responsive.css" rel="stylesheet"/>
+   <link href="assets/css/custom.css" rel="stylesheet"/>
+   <!-- Google Fonts-->
+   <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css"/>
+  </meta>
+ </head>
+ <!-- === FINISHED GETTING STYLES === -->
+ <body>
+  <!-- === BEGIN HEADER === -->
+  <div id="body-bg">
+   <div id="hornav">
+    <div class="container no-padding border-bottom">
+     <div class="row">
+      <div class="col-md-8 no-padding">
+       <div class="visible-lg">
+        <ul class="nav navbar-nav" id="hornavmenu">
+         <li>
+          <a class="fa-home active" href="/">
+           Home
+          </a>
+         </li>
+         <li>
+          <a class="fa-gears" href="/">
+           Projects
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="col-md-4 no-padding">
+       <ul class="social-icons pull-right">
+        <li class="social-linkedin">
+         <a href="#" target="_blank" title="LinkedIn">
+         </a>
+        </li>
+        <li class="social-github">
+         <a href="#" target="_blank" title="GitHub">
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- === END HEADER === -->
+  <!-- === BEGIN CONTENT === -->
+  <div id="content">
+   <div class="container background-white bottom-border">
+    <div class="row margin-vert-20">
+    </div>
+    <div class="col-md-10">
+     <!-- Date -->
+     <div class="blog-post-date">
+      <a href="#" id="post-date">
+       15 Aug 2017
+      </a>
+     </div>
+     <br/>
+     <br/>
+     <div class="blog-post left-15">
+      <div class="blog-item-header">
+       <h2>
+        <a href="#" id="post-title">
+         Just Fanfiction Statistics
+        </a>
+       </h2>
+      </div>
+      <body>
+       <div class="border-box-sizing" id="notebook" tabindex="-1">
+        <div class="container" id="notebook-container">
+         <div class="cell border-box-sizing text_cell rendered">
+          <div class="inner_cell">
+           <div class="border-box-sizing">
+            <h1 id="Introduction">
+             Introduction
+             <a class="anchor-link" href="#Introduction">
+              ¶
+             </a>
+            </h1>
+           </div>
+          </div>
+         </div>
+         <div class="cell border-box-sizing text_cell rendered">
+          <div class="inner_cell">
+           <div class="border-box-sizing">
+            <p>
+             Welcome to
+             <em>
+              Just Fanfiction Statistics
+             </em>
+             . In this mini-project, we gather data from the website fanfiction.net in order to gain some insight on the online fanfiction community. For those unfamiliar with fanfiction, it is any form of fiction in which the characters or settings are directly taken from another existing work. These works are typically created by fans of the original work, hence the name "fanfiction".
+            </p>
+            <p>
+             What is exciting about fanfiction is that ever since the rise of the internet, it essentially operated on a free market. Unlike the standard publishing industry, there is no middle-man, no gatekeeper, no moderators, no contract, little to no regulation, and very few barriers to entry. Common inefficiencies, distortions, and biases (eg. sexism, racism) are also limited or absent under this system. Anyone can write a story, and anyone can read it... for free!
+            </p>
+            <p>
+             What this creates is something known in economics as perfect competition.  Stories are "priced" -- we will go into what this means, given that no money is being exchanged, later -- exactly at where supply (the stories authors are willing to write) meets demand (the stories readers are willing to read). This gives us invaluable insight into, say, what our next bestseller will be. Indeed, for those who didn't know, E.L. James'
+             <em>
+              Fifty Shades of Grey
+             </em>
+             began as an extremely popular fanfiction... and then reached massive commercial success with over 125 million copies sold.
+            </p>
+           </div>
+          </div>
+         </div>
+         <div class="cell border-box-sizing text_cell rendered">
+          <div class="inner_cell">
+           <div class="border-box-sizing">
+            <h2 id="Project-breakdown">
+             Project breakdown
+             <a class="anchor-link" href="#Project-breakdown">
+              ¶
+             </a>
+            </h2>
+           </div>
+          </div>
+         </div>
+         <div class="cell border-box-sizing text_cell rendered">
+          <div class="inner_cell">
+           <div class="border-box-sizing">
+            <p>
+             For this project, the below gives an outline of our final objectives.
+            </p>
+            <p>
+             The community
+            </p>
+            <ul>
+             <li>
+              Characterize the users on the site
+             </li>
+             <li>
+              Predict who will write what stories
+             </li>
+             <li>
+              Predict who will read what stories
+             </li>
+             <li>
+              Find the most influential author on the site
+             </li>
+            </ul>
+            <p>
+             The stories
+            </p>
+            <ul>
+             <li>
+              Characterize the stories being published
+             </li>
+             <li>
+              Predict what types of stories will be successful
+             </li>
+             <li>
+              Tell how well a story is performing relative to its peers
+             </li>
+             <li>
+              Characterize the content of successful stories
+             </li>
+            </ul>
+            <p>
+             Note that is is an on-going project, and the results will be published in the same sequence that they are performed. Also note that some of the objectives on the list requires technologies that we currently do not have. We will leave an update when this has changed.
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </body>
+      <!--
+        <li class="previous">
+          <a href="#">&larr; Previous</a>
+        </li>
+      -->
+      <ul class="pager">
+        <li class="next">
+          <a href="jffs1.html">Next &rarr;</a>
+        </li>
+      </ul>
+     </div>
+     <div class="row margin-vert-20">
+     </div>
+    </div>
+   </div>
+   <!-- === END CONTENT === -->
+   <!-- === BEGIN FOOTER === -->
+   <div id="footer">
+    <div class="container">
+     <div class="row">
+      <!-- Footer Menu -->
+      <div class="col-md-8" id="footermenu">
+       <ul class="list-unstyled list-inline">
+        <li>
+         <span class="fa-phone">
+          Telephone:
+         </span>
+         1-800-123-4567
+        </li>
+        <li>
+         <span class="fa-envelope">
+          Email:
+         </span>
+         <a href="mailto:info@example.com">
+          info@example.com
+         </a>
+        </li>
+       </ul>
+      </div>
+      <!-- End Footer Menu -->
+      <!-- Copyright -->
+      <div class="col-md-4" id="copyright">
+       <p class="pull-right">
+        (c) 2016 lily-tian
+       </p>
+      </div>
+      <!-- End Copyright -->
+     </div>
+    </div>
+   </div>
+   <!-- === END FOOTER === -->
+  </div>
+ </body>
+</html>
